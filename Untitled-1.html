@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Sisca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #db83b9;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #333;
+        }
+        
+        .cover-image {
+            width: 85%;
+            height: auto;
+            margin-top: 20px;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        article {
+            background-color: white;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            font-weight: bold;
+            display: block;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #db83b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #c15694;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Website Sederhana</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#my-hobby">My Hobby</a></li>
+                <li><a href="#my-music">My Music</a></li>
+                <li><a href="#my-movie">My Movie</a></li>
+                <li><a href="#saran-kritik">Saran & Kritik</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="Gambar/Halaman 1.png" class="cover-image" alt="Cover">
+
+        </div>
+    </header>
+
+    <main>
+        <article id="about-me">
+            <h2>About Me</h2>
+            <img src="Gambar/Halaman about me.png" width="100%" height="100%">
+
+
+            <article id="my-hobby">
+                <h2>My Hobby</h2>
+                <img src="Gambar/my hobby.png" width="100%" height="100%">
+
+
+                <article id="my-music">
+                    <h2>My Music</h2>
+                    <img src="Gambar/my music.png" width="100%" height="100%">
+
+
+                    <article id="my-movie">
+                        <h2>My Movie</h2>
+                        <img src="Gambar/my movie.png" width="100%" height="100%">
+
+
+                        <div class="container" id="saran-kritik">
+                            <h2>Kritik dan Saran</h2>
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="nama">Nama</label>
+                                    <input type="text" id="nama" name="nama" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="saran">Saran/Kritik</label>
+                                    <textarea id="saran" name="saran" required></textarea>
+                                </div>
+                                <button type="submit" class="btn">Kirim Saran/Kritik</button>
+                            </form>
+                        </div>
+    </main>
+
+</body>
+
+</html>
